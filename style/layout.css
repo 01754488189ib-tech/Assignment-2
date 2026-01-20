@@ -33,7 +33,28 @@
     "header header main   main   main   main "
     "aside  aside  aside  aside  footer footer"
  }
-
- /* .youtube-img{ */
-   background-size: ;
+ 
+ /* .hide { */
+   display: none !important;
  }
+
+@media screen and (max-width:576px) {
+
+   /* .container{ */
+      display: grid;
+      gap: 20px;
+      grid-template-areas: 
+    
+    "header"
+    "navbar"
+    "main"
+    "aside"
+    "footer"
+   }
+
+   /* #skills-card{ */
+      padding-top: 40px;
+      flex-direction: column ;
+      padding: auto;
+   }
+}
