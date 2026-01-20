@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Assignment 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style/layout.css">
 </head>
 <body>
@@ -12,12 +13,18 @@
         <div class="flex text-[#FFFFFF] justify-between bg-[#1A0B2E] w-full h-[92px] mx-[200]">
             <h3 class="text-[32px] font-black p-[30px] ml-[200px]">Tech<span class=" bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span></h3>
             <div class="items-center flex gap-[32px]">
-            <p>About</p>
-            <p>Episodes</p>
-            <p>Host</p>
+               
+            <p><button class="gap-3 w-[100px] h-[44px] border-2 border-[#0033ff60] text-[#fefefe] rounded-[1000px] py-2 px-6 hover:bg-[#2a47bb5f]
+                 hover:text-[#FB09B4] hover:border-white">About</button></p>
+            <p><button class="gap-3 w-[147px] h-[44px] border-2 border-[#0033ff60] text-[#fefefe] rounded-[1000px] py-2 px-6 hover:bg-[#2a47bb60]
+                 hover:text-[#FB09B4] hover:border-white">Episodes</button></p>
+            <p><button class="gap-3 w-[147px] h-[44px] border-2 border-[#0033ff60] text-[#fefefe] rounded-[1000px] py-2 px-6 hover:bg-[#2a47bb59]
+                 hover:text-[#FB09B4] hover:border-white">Host</button></p>
             </div>
+            
             <div class="p-[30px] pr-[200px]">
-                <button class="rounded-[1000px] py-2 px-6 bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] justify-center align-middle hover:text-black">Subscribe</button>
+                
+                <button class="flex items-center gap-1 font-bold    rounded-full py-2 px-6 bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] justify-center align-middle hover:text-black">Subscribe<i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </div>
         
@@ -26,21 +33,23 @@
     <main>
         <section  class="text-[#FFFFFF] p-15 bg-[url('assets/hero-bg.png')]  bgo-cover bg-center w-full  flex flex-col justify-center items-center h-[760px]">
             <div class="flex flex-col justify-center  max-w-[550px] max-h-[558px] mx-auto p-13 items-center">
+                <div class=" bg-[url('assets/hero-circle.png')] relative flex items-center bg-cover bg-center w-[350px] h-[350px] justify-center align-middle overflow-visible ">
 
-                <div class="bg-[url('assets/hero-circle.png')] relative flex items-center bg-cover bg-center w-[350px] h-[350px] justify-center align-middle ">
-            <img src="assets/microphone.png" alt="">
+                    <div class="absolute inset-12 bg-purple-500 rounded-full animate-ping opacity-25 z-0"></div>
+
+                <img src="assets/microphone.png" alt="microphone" class="w-1/2 z-10 animate-bounce object-scale-down">           
+                <span class="absolute top-[2%] right-[10%] bg-[#00FF88] text-black text-[20px] md:text-[18px] font-medium px-3 py-1 rounded-full shadow-[0_0_20px_#00FF88]">
+                NEW
+                </span>
                  </div>
-
-                 <!-- <button class="border w-43px h-22px rounded-full text-black bg-[#00FF88]">NEW</button> -->
-
             <div class="space-y-4 w-[550px] h-[100px]">
                 <h3 class="text-[60px] font-bold text-center">TechWave</h3>
                   <p class="text-center">Your daily dose of tech insights, productivity hacks, and personal growth</p>
 
             <div class="text-center">
-                <button class="rounded-[1000px] py-2 px-6 bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] justify-center align-middle hover:text-black">Listen on Spotify</button>
+                <button class="rounded-[1000px] py-2 px-6 bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] justify-center align-middle hover:text-black"><i class="fa-brands fa-spotify"></i> Listen on Spotify</button>
                 <button class="gap-3 w-[147px] h-[44px] border-2 border-[#00FF88] text-[#00FF88] rounded-[1000px] py-2 px-6 hover:bg-green-500
-                 hover:text-black hover:border-white">Subscribe</button>
+                 hover:text-black hover:border-white shadow-[0_0_20px_#00FF88]"><i class="fa-regular fa-envelope"></i> Subscribe</button>
             </div>
         </div>
             </div>    
@@ -68,7 +77,7 @@
                 <h4 class="text-center">Episodes Published</h4>
                 </div>
                 <div class="">
-                <h2 class="text-[48px] text-[#00FF88] font-bold text-center">4.9</h2>
+                <h2 class="text-[48px] text-[#00FF88] font-bold text-center">4.9 <i class="fa-etch fa-solid fa-star"></i></h2>
                 <h4 class="text-center">Average Rating</h4>
                 </div>
                 <div class="">
@@ -87,7 +96,7 @@
             </div>
 
             <div class="container text-[#FFFFFF] mx-auto pt-[40px] flex flex-wrap justify-center">
-                <header class="w-[380px] h-[480px]">
+                <header class="w-[380px] h-[480px] shadow-[0_0_20px_#7c53ae]">
                     <div class="py-[100px]">
                          <img src="assets/headphone.png" alt="">
                      <h1 class="font-bold text-[24px]">Premium Audio Quality</h1>
@@ -96,25 +105,25 @@
                    
                 </header>
 
-                <nav class="w-[790px] h-[225px]">
+                <nav class="w-[790px] h-[225px] shadow-[0_0_20px_#7c53ae]">
                      <img src="assets/device.png" alt="">
                     <h2 class="font-bold text-[24px]">Mobile Friendly</h2>
                     <p class="text-[16px]">Listen on the go with seamless mobile experience and offline downloads.</p>
                 </nav>
 
-                <main class="w-[790px] h-[225px]">
+                <main class="w-[790px] h-[225px] shadow-[0_0_20px_#7c53ae]">
                     <img src="assets/location.png" alt="">
                     <h3 class="font-bold text-[24px]">Global Community</h3>
                     <p class="text-[16px]">Connect with tech enthusiasts from over 120 countries worldwide.</p>
                 </main>
 
-                <aside class="w-[790px] h-[273px]">
+                <aside class="w-[790px] h-[273px] shadow-[0_0_20px_#7c53ae]">
                     <img src="assets/" alt="">
                     <h4 class="font-bold text-[24px]">Exclusive Interviews</h4>
                     <p class="text-[16px]">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
                 </aside>
 
-                <footer class="w-[380px] h-[273px]">
+                <footer class="w-[380px] h-[273px] shadow-[0_0_20px_#7c53ae]">
                     <img src="assets/resource.png" alt="">
                     <h5 class="font-bold text-[24px]">Rich Resources</h5>
                     <p class="text-[16px]">Access show notes, transcripts, and additional learning materials for every episode.</p>
@@ -128,9 +137,9 @@
                     <h1>Featured Episodes</h1>
                 </div>
                 <div class="flex pt-[40px] gap-[30px] justify-center">
-                     <div class="w-[380px] h-[440px] rounded-[10px] bg-[#250D44]">
+                     <div class="w-[380px] shadow-[0_0_20px_#FFFFFF] h-[440px] rounded-[10px] bg-[#250D44]">
                     <a href="https://www.youtube.com/watch?v=H5zSQ9M_s2Y" target="_blank overflow-hidder">
-                        <img  src="assets/web developmeni in 2026.jpg" alt="thumbnail" class="w-full h-[214px] object-cover hover:scale-105 transition-transform duration-300">
+                        <img  src="assets/web developmeni in 2026.jpg" alt="thumbnail" class=" rounded-t-[12px] w-full h-[214px] object-cover hover:scale-105 transition-transform duration-300">
                     </a>
                     <h4 class="font-bold px-[24px] pt-[24px] pb-[12px] text-[24px]">web developmeni in 2026</h4> 
                     <p class="px-[24px]">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
@@ -140,9 +149,9 @@
                    </div>
                 </div>
                 
-                <div class="w-[380px] h-[440px] rounded-[10px] bg-[#250D44]">
+                <div class="w-[380px] shadow-[0_0_20px_#FFFFFF] h-[440px] rounded-[10px] bg-[#250D44]">
                     <a href="https://www.youtube.com/watch?v=ZrEST63Xi6o"target="_blank overflow-hidder">
-                        <img src="assets/Web Development Batch 13.jpg" alt="thumbnail"  class="w-full h-[214px] object-cover hover:scale-105 transition-transform duration-300">
+                        <img src="assets/Web Development Batch 13.jpg" alt="thumbnail"  class="rounded-t-[12px] w-full h-[214px] object-cover hover:scale-105 transition-transform duration-300">
                     </a>
                     <h4 class="font-bold px-[24px] pt-[24px] pb-[12px] text-[24px]">Web Development Batch 13</h4>
                     <p class="px-[24px]">Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
@@ -152,9 +161,9 @@
                   </div>
                 </div>
 
-                <div class="w-[380px] h-[440px] rounded-[10px] bg-[#250D44]">
+                <div class="w-[380px] h-[440px] shadow-[0_0_20px_#FFFFFF] rounded-[10px] bg-[#250D44]">
                     <a href="https://www.youtube.com/watch?v=sMbDwjAcSV0">
-                        <img src="assets/Jobs that will remain after 2026. Top 10 Job in 2026..jpg" alt="thumbnail" class="w-full h-[214px] object-cover hover:scale-105 transition-transform duration-300">
+                        <img src="assets/Jobs that will remain after 2026. Top 10 Job in 2026..jpg" alt="thumbnail" class="rounded-t-[12px] w-full h-[214px] object-cover hover:scale-105 transition-transform duration-300">
                     </a>
                     <h4 class="font-bold px-[24px] pt-[24px] pb-[12px] text-[24px]">Jobs that will remain 2026</h4>
                     <p class="px-[24px]">Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
@@ -174,21 +183,22 @@
                     <h2>Meet the Host</h2>
                 </div>
              </div>
-             <div class="flex items-center max-w-[1200px] mx-auto gap-8 p12 bg-[#351165] rounded-[30px] mt-[40px] ">
+             
+             <div class="flex items-center shadow-[0_0_20px_#FFFFFF] max-w-[1200px] mx-auto gap-8 p12 bg-[#351165] rounded-[30px] mt-[40px] ">
                 <div class="flex-shrink-0 py-[40px] pl-[40px]">
-                    <img src="assets/host.png" alt="Alex Kumar" class="w-[200px] h-[200px] rounded-full object-cover">
+                    <img src="assets/host.png" alt="Alex Kumar" class="shadow-[0_0_20px_#FFFFFF] w-[200px] h-[200px] rounded-full object-cover">
                 </div> 
 
                 <div class="flex flex-col gap-4"  >
                     <div class="">
                     <h2 class=" font-bold text-[32px] pb-[16px] ">Alex Kumar</h2>
                 <p class="text-[16px] ">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years,
-                    <br> working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and
-                    <br> practical advice for anyone looking to grow in tech.</p>
+                    <br> working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders <br> and
+                     practical advice for anyone looking to grow in tech.</p>
                 </div>
                 <div class="flex gap-[8px]">
                     <div class="flex justify-center items-center w-[40px] h-[40px] border border-[#533C72] rounded-full">
-                        <img src="assets/linkedin.png" alt="Linkedin" class="w-[20px] h-[20px]">
+                        <img src="assets/linkedin.png" alt="Linkedin" class=" w-[20px] h-[20px]">
                     </div>
                     <div class="flex justify-center items-center w-[40px] h-[40px] border border-[#533C72] rounded-full">
                          <img src="assets/x.png" alt="X" class="w-[20px] h-[20px]">
